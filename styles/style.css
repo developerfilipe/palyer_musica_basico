@@ -1,0 +1,186 @@
+:root {
+    --color-primaria: #fef2f2;
+    --color-cards: #fca5a5;
+    --color-letters: #f4f4f5;
+    --color-progress-bar: #991b1b;
+}
+
+* {
+    margin: 0;
+    padding: auto;
+    color: var(--color-letters);
+    box-sizing: border-box;
+    /* Padding e borda dentro do tamanho definido */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-size: medium;
+    font-weight: normal;
+}
+
+img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-primaria);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containner_main {
+    margin-left: -5rem;
+    width: 55vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containner {
+    width: 50%;
+    height: 90%;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#containner-vertical {
+    justify-content: end;
+}
+
+.card_vertical {
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-cards);
+    border-radius: 0.8rem;
+    padding: 1.8rem;
+}
+
+.containner_card_imagem {
+    height: 35%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containner_card_imagem img {
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 15px 10px 5px 0px rgba(248, 113, 113, 0.57);
+    -moz-box-shadow: 15px 10px 5px 0px rgba(248, 113, 113, 0.57);
+    box-shadow: 15px 10px 5px 0px rgba(248, 113, 113, 0.57);
+}
+
+.nome_musica {
+    margin-bottom: 0.6rem;
+}
+
+.nome_musica #nome_muscia_vertical {
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+}
+
+.nome_musica #nome_banda_vertical {
+    opacity: 0.6;
+}
+.player_musica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.controles_player {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1px;
+}
+.elapsed_time{
+    width: 100%;
+}
+
+.progress_bar {
+    display: flex;
+    height: 0.3rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: var(--color-primaria);
+    opacity: 0.5;
+    margin-top: 1rem;
+
+}
+
+.metade_esquerda {
+    background-color: var(--color-progress-bar);
+    width: 75%;
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    opacity: 1;
+
+}
+
+.tempo_misca {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.players_horizontais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.card_player_horizontal {
+    height: 48%;
+    background-color: var(--color-cards);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.detalhes_musica_horizontal {
+    display: flex;
+}
+
+.containner_card_imagem_horizontal {
+    width: 5rem;
+    border-radius: 0.2rem;
+    margin-right: 1.5rem;
+}
+
+.containner_card_imagem_horizontal img {
+    width: 5rem;
+    border-radius: 0.2rem;
+    -webkit-box-shadow: 10px 6px 5px -4px rgba(248, 113, 113, 0.57);
+    -moz-box-shadow: 10px 6px 5px -4px rgba(248, 113, 113, 0.57);
+    box-shadow: 10px 6px 5px -4px rgba(248, 113, 113, 0.57);
+}
+
+.ajuste_escala_player_horizontal{
+    width: 70%;
+    justify-content: space-around;
+}
